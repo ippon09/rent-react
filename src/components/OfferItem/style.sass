@@ -1,0 +1,117 @@
+.offers_item
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    width: 450px
+    background: #f0efef
+    box-shadow: 4px 4px 8px 5px rgba(34, 60, 80, 0.3)
+    transition: all .1s ease-in-out
+    cursor: pointer
+    margin: auto
+
+.offer_descr
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    width: 100%
+    text-align: center
+
+.offer_img
+    display: block
+    width: 100%
+    max-width: 100%
+    /* height: 100%; */
+    object-fit: cover
+
+.offer_descr p:nth-child(2n+1)
+    background: rgb(198, 198, 198)
+
+.offer_descr a:last-child
+    background: rgb(198, 198, 198)
+    display: block
+
+.apart_address
+    padding: 10px
+
+.title
+    font-family: "Sofia Sans Condensed", sans-serif
+    padding: 20px
+    text-align: center
+    font-size: 20px
+    letter-spacing: .1rem
+    text-transform: uppercase
+    background: rgb(198, 198, 198)
+
+.number
+    /* margin-top: 30px; */
+    text-align: center
+    padding: 10px
+    font-size: 20px
+    cursor: pointer
+    transition: all linear .2s
+
+.number:hover
+    color: #fff
+
+.call_img
+    width: 50px
+    margin: 20px
+    animation: call 1.25s ease-in-out infinite
+.sub_title
+    /* list-style-type: disc; */
+    /* list-style-position: inside; */
+    list-style: none
+    text-align: left
+    padding: 20px
+    padding-top: 20px
+    overflow: hidden
+    height: 100px
+.swiper
+    height: 350px
+.descr
+    list-style: none
+.number
+    color: inherit
+.swiper1
+    height: 350px
+    overflow: hidden
+
+.offer_photo
+    position: relative
+    
+.custom-swiper-button-next1
+    background-image: url('../../assets/next-arrow.png')
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center
+    position: absolute
+    z-index: 1
+    right: 0px
+    top: 0px
+    width: 80px
+    height: 100%
+    cursor: pointer
+    opacity: 1
+
+.custom-swiper-button-prev1
+    background-image: url('../../assets/prev-arrow.png')
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center
+    position: absolute
+    z-index: 1
+    left: 0px
+    top: 0px
+    width: 80px
+    height: 100%
+    cursor: pointer
+    /* transition: all 2s ease; */
+    opacity: 1
+
+.offer_photo:hover .custom-swiper-button-prev1
+    background-image: linear-gradient(45deg, #0000003a, #000000b9), url('../../assets/prev-arrow.png')
+    opacity: 1
+.offer_photo:hover .custom-swiper-button-next1
+    background-image: linear-gradient(45deg, #0000003a, #000000b9), url('../../assets/next-arrow.png')
+    opacity: 1
